@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha HTML</title>
+    <style>
+        code {
+            color: rgb(0, 3, 187);
+            background-color: rgb(224, 224, 224);
+            border-radius: 8px;
+            padding: 2px 4px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML5</h1>
+        <hr/>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+            <li><a href="#texto">Elementos de texto</a></li>
+            <li><a href="#links-imagens">Links e imagens</a></li>
+            <li><a href="#tags">Tags semânticas</a></li>
+            <li><a href="#link-ref">Link de Referências</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <hr>
+        <section>
+            <h2 id="estrutura">Estrutura básica</h2>
+            <p>
+                A estrutura básica é o ponto de partida de todo documento HTML e é essencial entender como estruturar corretamente um arquivo HTML para garantir que o navegador interprete e exiba o conteúdo corretamente.
+            </p>
+            <ol>
+                <li>
+                    <strong>Declaração do tipo de documento</strong>: Inicia com `<code>&lt;!DOCTYPE html&gt;</code>`, que informa ao navegador que o documento está usando HTML5.
+                </li>
+                <li>
+                    <strong>Tag `<code>&lt;html&gt;</code>`</strong>: Envolve todo o conteúdo do documento.
+                </li>
+                <li>
+                    <strong>Seção `<code>&lt;head&gt;</code>`</strong>: Contém metadados, como o título do documento e links para estilos e scripts.
+                </li>
+                <li>
+                    <strong>Seção `<code>&lt;body&gt;</code>`</strong>: Contém o conteúdo visível da página, como texto, imagens e links.
+                </li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h2 id="texto">Elementos de texto</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>
+                Os elementos de texto são fundamentais para estruturar o conteúdo de uma página web. O HTML oferece diversas tags para <mark>organizar e formatar o texto</mark> de maneira clara e acessível.
+            </p>
+            <ul>
+                <li>
+                    <strong>Títulos: </strong><code>&lt;h1&gt; a &lt;h6&gt;</code>: Usados para definir títulos e subtítulos, onde `<code>h1</code>` é o mais <u>importante</u> e `<code>h6</code>` o <u>menos</u>.
+                </li>
+                <li>
+                    <strong>Parágrafos: </strong><code>&lt;p&gt;</code>: Usado para definir blocos de texto.
+                </li>
+                <li>
+                    <strong>Quebras de linha: </strong><code>&lt;br&gt;</code>: Usado para inserir uma quebra de linha sem iniciar um novo parágrafo.
+                </li>
+                <li>
+                    <strong>Ênfase: </strong><code>&lt;strong&gt;</code> e <code>&lt;em&gt;</code>: Usados para destacar texto, onde `<code>strong</code>` indica ênfase forte e `<code>em</code>` ênfase leve. É importante entender a diferença semântica entre, por exemplo, </strong><code>&lt;strong&gt;</code> e <code>&lt;b&gt;</code>, ambos deixam o texto em negrito, mas o primeiro indica que o texto é importante.
+                </li>
+                <li>
+                    <strong>Listas: </strong><code>&lt;ul&gt;</code> (não ordenada) e <code>&lt;ol&gt;</code> (ordenada): Usadas para criar listas de itens, com `<code>li</code>` para cada item da lista.
+                </li>
+                <li>
+                    <strong>Mark: </strong><code>&lt;mark&gt;</code>: Usado para destacar partes do texto, geralmente com um fundo amarelo.
+                </li>
+                <li>
+                    <strong>Abreviações: </strong><code>&lt;abbr&gt;</code>: Usado para definir abreviações, com o atributo `title` para fornecer a forma completa.
+                </li>
+                <li>
+                    <strong>Citações: </strong><code>&lt;blockquote&gt;</code>: Usado para citações longas, geralmente com recuo.
+                </li>
+                <li>
+                    <strong>Citações curtas: </strong><code>&lt;q&gt;</code>: Usado para citações curtas dentro de um parágrafo, geralmente com aspas.
+                </li>
+                <li>
+                    <strong>Referências: </strong><code>&lt;cite&gt;</code>: Usado para citar o título de uma obra, como livros ou filmes.
+                </li>
+                <li>
+                    <strong>Subscrito e sobrescrito: </strong><code>&lt;sub&gt;</code> e <code>&lt;sup&gt;</code>: Usados para texto em subscrito (abaixo da linha de base) e sobrescrito (acima da linha de base), respectivamente.
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2 id="links-imagens">Links e Imagens</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>
+                Links e imagens são elementos essenciais para a navegação e a apresentação visual de uma página web. Eles permitem que os usuários acessem outras páginas e visualizem conteúdo multimídia.
+            </p>
+            <ul>
+                <li>
+                    <strong>Links: </strong><code>&lt;a&gt;</code>: Usado para criar links, com o atributo `href` para especificar o destino. Exemplo: `<code>&lt;a href="https://www.exemplo.com"&gt;Visite nosso site&lt;/a&gt;</code>`.
+                </li>
+                <li>
+                    <strong>Imagens: </strong><code>&lt;img&gt;</code>: Usado para inserir imagens, com o atributo `src` para especificar o caminho da imagem e `alt` para fornecer uma descrição alternativa. Exemplo: `<code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code>`.
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2 id="tags">Tags de Estruturação Semânticas</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <ul>
+                <li>
+                    <strong>Header: </strong><code>&lt;header&gt;</code>: Usado para definir o cabeçalho de uma página ou seção, geralmente contendo o título e a navegação principal.
+                </li>
+                <li>
+                    <strong>Nav: </strong><code>&lt;nav&gt;</code>: Usado para definir uma seção de navegação, contendo links para outras páginas ou seções do site.
+                </li>
+                <li>
+                    <strong>Main: </strong><code>&lt;main&gt;</code>: Usado para definir o conteúdo principal da página, excluindo cabeçalhos, rodapés e barras laterais.
+                </li>
+                <li>
+                    <strong>Section: </strong><code>&lt;section&gt;</code>: Usado para definir seções temáticas dentro do conteúdo, cada uma com seu próprio título.
+                </li>
+                <li>
+                    <strong>Article: </strong><code>&lt;article&gt;</code>: Usado para definir conteúdo independente e autocontido, como postagens de blog ou artigos de notícias.
+                </li>
+                <li>
+                    <strong>Aside: </strong><code>&lt;aside&gt;</code>: Usado para definir conteúdo relacionado, mas não essencial, como barras laterais ou notas de rodapé.
+                </li>
+                <li>
+                    <strong>Footer: </strong><code>&lt;footer&gt;</code>: Usado para definir o rodapé de uma página ou seção, geralmente contendo informações de copyright, links de contato e outras informações complementares.
+                </li>
+                <li>
+                    <strong>Div<sup>*</sup>: </strong><code>&lt;div&gt;</code>: Usado para agrupar conteúdo genérico, sem significado semântico específico, mas útil para aplicar estilos ou scripts.
+                </li>
+                <li>
+                    <strong>Span<sup>*</sup>: </strong><code>&lt;span&gt;</code>: Usado para agrupar texto ou outros elementos inline, sem significado semântico específico, mas útil para aplicar estilos ou scripts.
+                </li> 
+                <p><sup>*</sup> Não possuem significado semântico associado</p>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2 id="link-ref">Link de Referências</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>: Documentação completa sobre HTML, incluindo exemplos e melhores práticas.
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML</a>: Tutorial interativo sobre HTML, com exemplos práticos e exercícios.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
